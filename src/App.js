@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-// I wanted to make each component written in its own module located in Components folder
+// I wanted to make each component written in its own file located in Components folder
 // and import it like below but I could not figure out exactly how data flow works in React
+// and have the components talk to each other regarding the API
 
 // import Header from './components/Header.js'
 // import Main from './components/Main.js'
@@ -27,7 +28,7 @@ class Header extends React.Component {
     event.preventDefault();
     country = this.state.value;
     url = mainApi+'&nat='+country;
-    // logs out the url correctly but I could not figure out how to bind fetchData and fire it to call different nationality
+    // logs out the url correctly but I could not figure out how to bind fetchData and fire it to call API dynamically
     console.log(url);
   }
 
