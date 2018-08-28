@@ -42,6 +42,31 @@ class Main extends React.Component {
   }
 
   render() {
+
+    //Jake Amigo Comment - Although this method is fine it can look untidy with bigger apps - a good alternative would be to create a variable outside the return then an if() statement which checks what you need. 
+
+    // ie:
+
+    // let persons = null;
+    // if(this.state.showPersons) {
+    //   persons = (
+    //     <div>
+    //     {
+    //       this.state.persons.map((person) => {
+    //         return (
+    //           <Person name={person.name}></person>
+    //         )
+    //       })
+    //     }
+    //     </div>
+    //   )
+    // }
+
+    // then in your return all you will need to give is the persons variable
+
+
+    //Also when mapping through something it will always need a key attribute so react can keep track of it - with most apis this is usually an id
+
     const {isLoading, contacts} = this.state;
     return (
       <div>
