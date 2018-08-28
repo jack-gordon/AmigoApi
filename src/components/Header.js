@@ -8,14 +8,17 @@ class Header extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  //Jake Amigo Comment - would be good to see this function working and how you would use it with the comments ive given you and the fetch you created
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state.value);
   }
-
+  
   handleChange(event) {
     this.setState({value: event.target.value});
   }
+
+  // Jake amigo comment - Sometimes for small components you dont need to create a component with a class if you are just using the component to render dynamic content - could just be a Const returning JSX
 
   render() {
 
