@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300i,400,700');
 
-body {
-  background-color: #3F414E;
-  font-family: 'Lato', sans-serif;
-  color: white;
-}
-
-h1 {
-  font-weight: 700;
-  margin-right: 20px;
-  text-align: center;
-}
-
 input::placeholder {
   color: white;
   font-style: italic;
@@ -24,6 +12,7 @@ form {
 }
 
 label {
+  margin-left: 40px;
   margin-right: 20px;
 }
 
@@ -41,14 +30,9 @@ label {
   background-color: #4B4C5C;
 }
 
-.header {
-  width: 550px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
 .listContainer {
   width: 700px;
+  padding-top: 30px;
   margin: 0 auto;
 }
 
